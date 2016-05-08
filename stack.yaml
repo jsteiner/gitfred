@@ -6,7 +6,9 @@ resolver: lts-5.5
 # Local packages, usually specified by relative directory name
 packages:
 - '.'
-- '../alfred-workflow-cache'
+- location:
+    git: git@github.com:jsteiner/alfred-workflow-cache
+    commit: master
 
 # Packages to be pulled from upstream that are not in the resolver (e.g., acme-missiles-0.3)
 extra-deps:
